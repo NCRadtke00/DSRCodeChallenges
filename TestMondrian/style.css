@@ -42,7 +42,22 @@ body {
     border-radius: 2px;
     overflow: hidden;
   }
-
+  .grid-container {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    padding: 0.2rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 14% 11% 27% 19% 21% 5.8%;
+    grid-template-rows: 1% 12% 14% 20% 14% 14% 17% 4.8%;
+    grid-gap: 0.2rem;
+  }
   .grid-item {
     color: #000;
     background-color: #fff;
@@ -54,4 +69,14 @@ body {
   }
   .grid-item span {
     display: none;
+  }
+  .grid-item:nth-child(1) {
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+    background-color: #c6c7c2;
+  }
+  .grid-item:nth-child(2) {
+    grid-column: 2 / 5;
+    grid-row: 1 / 2;
+    background-color: #9c9e99;
   }
