@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    
+    background: lightgray;
+    background: linear-gradient(45deg, white 0%, #ececec 100%);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    padding: 1rem;
+    color: rgb(0, 0, 120);
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+}
+.title {
+    padding-bottom: 0.5rem;
+    color: rgb(0,0,120);
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+}
+.subtitle {
+    color: rgb(0,0,120);
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 2rem;
+}
+.footer {
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 42);
+    bottom: 0;
+    color: #c2c2c2;
+    display: flex;
+    font-size: 12px;
+    font-family: 'Brush Script MT', cursive;
+    height: 50px;
+    position: fixed;
+    text-transform: uppercase;
+    width: 100%;
+    z-index: 1;
+  }
