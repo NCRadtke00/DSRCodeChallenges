@@ -5,24 +5,6 @@
 - If I were to redo these challenges I would use React, Axios, SCSS, and firebase to host the challenges.
 - If you have any questions, feel free to reach me at `Raddnc@gmail.com` or via phone at `262-420-6008`.
 
-## Zip Code Finder
-
-- This is a challenge designed to test your ability to fetch data from an API, and manipulate the DOM with javascript. [ZIP Codes](https://en.wikipedia.org/wiki/ZIP_Code) are used by the USPS as unique identifiers for geographic regions. [Zippopotomus](https://zippopotam.us) is a free API that accepts zip codes, and returns detailed information about the geographic region that zip code represents.
-
-### The Challenge
-
-1. Accept user input of a zip code
-2. Fetch location details about that zip code from the [Zippopotomus](https://zippopotam.us) API.
-3. Display the location details.
-4. Hit it with the pretty stick; personalize the composition with some tasteful visual flair.
-
-### Requirements
-
-- You must complete the challenge within 4 hours of receiving this link.
-- You may use the included US State images in /states.
-- You may not use 3rd-party libraries.
-- The code should work in the latest version of Chrome.
-
 ## Piet Mondrian - No. VI Composition No. II
 
 - This is a test designed to challenge your CSS layout skills. Piet Mondrian was a 20th-century Dutch painter who popularized a movement in art, design, and architecture know as [De Stijl](https://en.wikipedia.org/wiki/De_Stijl). His painting _[No. VI / Composition No. II](https://www.artsy.net/artwork/piet-mondrian-no-vi-slash-composition-no-ii)_ is typical of this movement, featuring a grid of rectangular shapes in shades of white, gray and black, accented by bold primary colors.
@@ -40,6 +22,24 @@
 - Above 600px wide, the composition should resemble the painting.
 - Below 600px wide, the composition should be a single column of all the rectangles with all similar colors grouped together.
 - Hit it with the pretty stick; personalize the composition with some tasteful visual flair.
+
+## Zip Code Finder
+
+- This is a challenge designed to test your ability to fetch data from an API, and manipulate the DOM with javascript. [ZIP Codes](https://en.wikipedia.org/wiki/ZIP_Code) are used by the USPS as unique identifiers for geographic regions. [Zippopotomus](https://zippopotam.us) is a free API that accepts zip codes, and returns detailed information about the geographic region that zip code represents.
+
+### The Challenge
+
+1. Accept user input of a zip code
+2. Fetch location details about that zip code from the [Zippopotomus](https://zippopotam.us) API.
+3. Display the location details.
+4. Hit it with the pretty stick; personalize the composition with some tasteful visual flair.
+
+### Requirements
+
+- You must complete the challenge within 4 hours of receiving this link.
+- You may use the included US State images in /states.
+- You may not use 3rd-party libraries.
+- The code should work in the latest version of Chrome.
 
 ## Card Deck
 
