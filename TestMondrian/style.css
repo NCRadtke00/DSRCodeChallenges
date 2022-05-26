@@ -1,0 +1,30 @@
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body {
+    padding: 1rem;
+    background: lightgray;
+    background: linear-gradient(45deg, white 0%, #ececec 100%);
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.header {
+    color: rgb(0, 0, 120);
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+  }
+.title {
+    color: rgb(0,0,120);
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+  }
+.subtitle {
+    color: rgb(0,0,120);
+    text-align: center;
+    font-family: 'Brush Script MT', cursive;
+    margin-bottom: 2rem;
+  }
