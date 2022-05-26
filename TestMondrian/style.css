@@ -28,3 +28,19 @@ body {
     font-family: 'Brush Script MT', cursive;
     margin-bottom: 2rem;
   }
+.constrain-width {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+  }
+.square {
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    background: #30302e;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+
+
