@@ -181,6 +181,6 @@ body {
     grid-row: 8 / 9;
   }
   .grid-item:nth-child(28) {
-    grid-column: 1 / 1;
-    grid-row: 1 / 2;
+    grid-column: 5 / 6;
+    grid-row: 8 / 9;
   }
