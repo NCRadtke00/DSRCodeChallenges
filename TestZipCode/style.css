@@ -30,6 +30,45 @@ body {
     font-family: 'Brush Script MT', cursive;
     margin-bottom: 2rem;
 }
+.form {
+    padding-top: 1rem;
+    text-align: center;
+
+}
+    .form label{
+        font-family: 'Brush Script MT', cursive;
+        color: rgb(0,0,120);
+    }
+    .form input[type=text] {
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        width: 160px;
+        -webkit-transition: width 0.4s ease-in-out;
+        transition: width 0.4s ease-in-out;
+    }
+    .form input[type=text]:focus {
+        width: 25%;
+    }
+    .form button{
+        background-color: rgb(69, 69, 195);
+        border-width: thick solid;
+        border-radius: 50%;
+        color: white;
+        font-weight: semibold;
+        padding: 14px 20px;
+        margin: 8px 0;
+        border: none;
+        cursor: pointer;
+        width: 100px;
+    }
+    .form button:hover{
+        background-color:#04AA6D;
+        color: white;
+    }
+
 .footer {
     align-items: center;
     justify-content: center;
