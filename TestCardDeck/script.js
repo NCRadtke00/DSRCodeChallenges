@@ -179,14 +179,6 @@ const deck = new CardDeck(".deck", ".hand");
 
 // Take a look at the deck object and its methods.
 console.log(deck);
-
-function sortPossibleCards() {
-	// sorted' should sort the drawn cards: grouped by suit and ordered by rank. Ordering may be either asc or desc.}
-	//not needed
-	//could check if asc if not reverse or ignore
-	//let lowestToHighest = cards. sort((a, b) => a - b);
-	//let highestToLowest = cards. sort((a, b) => b-a);
-}
 const params = new URLSearchParams(window.location.search);
 const cards = params.get('cards'); // `index.html?cards=`
 if (cards) {
@@ -207,8 +199,20 @@ const limit = params.get('limit'); // `index.html?suits=spades&limit=4`
 if (limit) {
 	deck.limit(parseInt(limit));
 }
-deck.sort();
-deck.drawFiltered();
+deck.sort();//sorts cards in ascending order every time
+//deck.possibleCards.reverse(); // would take the sorted cards in descending order. (would need deck.sort(); called first.)
+//deck.drawFiltered(); // draws cards
+// Take a look at the deck object and its methods.
+console.log(deck);
+//something like this could sort
+// const sorted = params.get('sorted');
+// if (sorted){
+// 	deck.sort(); // will automatically sort ascending
+// } else if (sorted === "desc") {}
+// 	deck.sort(); //
+//	deck.possibleCards.reverse() : null;
+// 	}
+// }
 
 //https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams
 // const new_params = new URLSearchParams([
