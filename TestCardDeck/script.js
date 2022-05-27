@@ -188,10 +188,6 @@ function sortPossibleCards() {
 	//let highestToLowest = cards. sort((a, b) => b-a);
 }
 const params = new URLSearchParams(window.location.search);
-const limit = params.get('limit'); // `index.html?suits=spades&limit=4`
-if (limit) {
-	deck.limit(parseInt(limit));
-}
 const cards = params.get('cards'); // `index.html?cards=`
 if (cards) {
 	const cardsArray = cards.split(' ');
@@ -206,6 +202,10 @@ const ranks = params.get('ranks'); // `index.html?ranks=`
 if (ranks) { //will also need to map the cards rank
 	const ranksArray = ranks.split(' ').map((cardRank) => parseInt(cardRank));
 	deck.filter("rank", ranksArray);
+}
+const limit = params.get('limit'); // `index.html?suits=spades&limit=4`
+if (limit) {
+	deck.limit(parseInt(limit));
 }
 deck.sort();
 deck.drawFiltered();
