@@ -205,18 +205,24 @@ function sortPossibleCards() {
 // console.log(new_params);
 // a=hello&b=world&c=a&d=2&e=false
 const params = new URLSearchParams(window.location.search);
+
+//check cards limit as cards suits and rank could all have limit im starting here
+// `index.html?suits=spades&limit=4`
 const limit = params.get('limit');
 if (limit) {
 	deck.limit(parseInt(limit));
 }
-//check cards limit as cards suits and rank could all have limit im starting here
 
-// `index.html?suits=spades&limit=4`
 // `index.html?cards=`
-if (cards) { }
+const cards = params.get('cards');
+if (cards) {
+	const cardsArray = cards.split(' ');
+	deck.filter("id", cardsArray);
+}
 // `index.html?suits=`
+const suits = params.get('suits');
 if (suits) { }
 // `index.html?ranks=`
+const ranks = params.get('ranks');
 if (ranks) { }
-
 
