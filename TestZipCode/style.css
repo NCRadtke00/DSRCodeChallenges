@@ -13,13 +13,13 @@ body {
     justify-content: center;
 }
 .header {
-    padding: 1rem;
+    padding: 2px;
     color: rgb(0, 0, 120);
     text-align: center;
     font-family: 'Brush Script MT', cursive;
 }
 .title {
-    padding-bottom: 0.5rem;
+    padding: 1px;
     color: rgb(0,0,120);
     text-align: center;
     font-family: 'Brush Script MT', cursive;
@@ -28,12 +28,9 @@ body {
     color: rgb(0,0,120);
     text-align: center;
     font-family: 'Brush Script MT', cursive;
-    margin-bottom: 2rem;
 }
 .form {
-    padding-top: 1rem;
     text-align: center;
-
 }
     .form label{
         font-family: 'Brush Script MT', cursive;
@@ -58,6 +55,7 @@ body {
         border-radius: 50%;
         color: white;
         font-weight: semibold;
+        font-family: 'Brush Script MT', cursive;
         padding: 14px 20px;
         margin: 8px 0;
         border: none;
@@ -68,7 +66,59 @@ body {
         background-color:#04AA6D;
         color: white;
     }
-
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding-top: 5x;
+}
+    .reset button {
+        background-color: rgb(99, 61, 134);
+        border-width: thick solid;
+        border-radius: 50%;
+        color: white;
+        font-weight: semibold;
+        font-family: 'Brush Script MT', cursive;
+        margin: 6px;
+        border: none;
+        cursor: pointer;   
+    }
+    .reset button:hover{
+        background-color:#aa0407;
+        color: white;
+    }
+.table {
+    font-family: 'Brush Script MT', cursive;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* padding: 25px; */
+    margin: 20px;
+    display:flex;
+    border-collapse: collapse;
+}
+    .table tr:nth-child(even){
+        background-color: #f2f2f2;
+    }
+    .table tr:hover {
+        background-color: #ddd;
+    }
+    .table td, .table th {
+        border: 1px solid #ddd;
+        padding: 10px;
+    }
+    .table th{
+        padding-top: 12px;
+        padding-bottom: 12px;
+        background-color: #04AA6D;
+        color:white;
+    }
+    .table td{
+        align-items: center;
+        justify-content: center;
+        
+    }
 .footer {
     align-items: center;
     justify-content: center;
