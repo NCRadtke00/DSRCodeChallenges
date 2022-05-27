@@ -5,7 +5,7 @@
 - If I were to redo these challenges I would use React, Axios, SCSS, and firebase to host the challenges.
 - If you have any questions, feel free to reach me at `Raddnc@gmail.com` or via phone at `262-420-6008`.
 
-## Piet Mondrian - No. VI Composition No. II
+## Piet Mondrian - No. VI Composition No. II - done
 
 - This is a test designed to challenge your CSS layout skills. Piet Mondrian was a 20th-century Dutch painter who popularized a movement in art, design, and architecture know as [De Stijl](https://en.wikipedia.org/wiki/De_Stijl). His painting _[No. VI / Composition No. II](https://www.artsy.net/artwork/piet-mondrian-no-vi-slash-composition-no-ii)_ is typical of this movement, featuring a grid of rectangular shapes in shades of white, gray and black, accented by bold primary colors.
 
@@ -23,7 +23,7 @@
 - Below 600px wide, the composition should be a single column of all the rectangles with all similar colors grouped together.
 - Hit it with the pretty stick; personalize the composition with some tasteful visual flair.
 
-## Zip Code Finder
+## Zip Code Finder - done
 
 - This is a challenge designed to test your ability to fetch data from an API, and manipulate the DOM with javascript. [ZIP Codes](https://en.wikipedia.org/wiki/ZIP_Code) are used by the USPS as unique identifiers for geographic regions. [Zippopotomus](https://zippopotam.us) is a free API that accepts zip codes, and returns detailed information about the geographic region that zip code represents.
 
@@ -41,7 +41,7 @@
 - You may not use 3rd-party libraries.
 - The code should work in the latest version of Chrome.
 
-## Card Deck
+## Card Deck - done
 
 Because we are not always working from a blank slate, it's important for developers to be able to read preexisting code and figure out how to use it. This challenge designed to test your ability to manipulate the DOM using a preexisting class, based on parameters passed in through the url. When you load index.html, you'll see a deck of cards face down. Your challenge is to draw cards from that deck determined by parmeters passed in via the URL querystring.
 
