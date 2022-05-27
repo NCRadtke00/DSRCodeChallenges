@@ -205,7 +205,10 @@ function sortPossibleCards() {
 // console.log(new_params);
 // a=hello&b=world&c=a&d=2&e=false
 const params = new URLSearchParams(window.location.search);
-
+const limit = params.get('limit');
+if (limit) {
+	deck.limit(parseInt(limit));
+}
 //check cards limit as cards suits and rank could all have limit im starting here
 
 // `index.html?suits=spades&limit=4`
