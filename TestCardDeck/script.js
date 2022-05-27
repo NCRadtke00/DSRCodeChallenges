@@ -227,6 +227,9 @@ if (suits) {
 }
 // `index.html?ranks=`
 const ranks = params.get('ranks');
-if (ranks) { }
+if (ranks) {
+	const ranksArray = ranks.split(' ');
+	deck.filter("rank", ranksArray);
+}
 deck.sort();
 deck.drawFiltered();
