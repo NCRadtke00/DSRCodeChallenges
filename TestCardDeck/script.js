@@ -201,7 +201,7 @@ if (limit) {
 }
 deck.sort();//sorts cards in ascending order every time
 //deck.possibleCards.reverse(); // would take the sorted cards in descending order. (would need deck.sort(); called first.)
-//deck.drawFiltered(); // draws cards
+deck.drawFiltered(); // draws cards
 // Take a look at the deck object and its methods.
 console.log(deck);
 //something like this could sort
