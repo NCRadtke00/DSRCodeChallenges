@@ -14,26 +14,29 @@
 		<h3 class="subtitle"> Input any zip code and get more information about its location. </h3>
 	<div>
 		<div class="form">
+			<!-- this is the input text field, and submit button -->
 			<label for="zip"> Enter Zip Code: </label><br>
 			<input type="text" id="zip" name="zip" placeholder="12345">
-		  	<button type="button" onClick={getData()}> Submit </button><br/>
+		  	<button type="button" onClick={getData()} value="submit"> Submit </button><br/>
+			<!-- this button will clear the page -->
 		  	<div class="reset">
-				<button type="submit"> Reset </button>
+				<button type="reset" onClick="window.location.reload();"> Reset </button>
 			</div>
 		</div>
 		<div>
 			<table class="table">
+				<!-- I wanted a table with the headings on the left to fill more of the page, was going to add a google map with the lat and long but decided to come back if I have more time. -->
 					<tr>
 						<th> City </th>
-						<td id="city"><p></p></td>
+						<td id="city"></td>
 					</tr>
 					<tr>
 						<th> State </th>
-						<td id="state"><p></p></td>
+						<td id="state"></td>
 					</tr>
 					<tr>
 						<th> State Abbreviation </th>
-						<td id="stateAbb"><p></p></td>
+						<td id="stateAbb"></td>
 					</tr>
 					<tr>
 						<th> Country </th>
@@ -60,9 +63,10 @@
 						<td><img id="img" height="100px" width="100px"/></td>
 					</tr>
 				</table>
+					<!-- If I was going to spend more time on this project... I'd put the results in a list, clear the input field upon adding them to a the list, display all of the searched zip codes the table with a scroll bar, and I'd add tooltip so that users would know what each button does. -->
 		</div>
 		<footer class="footer">
-			This project was built with JS es6, HTML5, CSS3 and the Zippopotomus API.
+			This project was built with JS, HTML5, CSS3 and the Zippopotomus API.
 		</footer>
 	<script src="script.js"></script>
 </body>
