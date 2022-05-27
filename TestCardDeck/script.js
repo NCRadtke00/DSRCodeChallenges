@@ -193,4 +193,18 @@ console.log(deck);
 // `index.html?suits=spades&limit=4`
 
 // sorted' should sort the drawn cards: grouped by suit and ordered by rank. Ordering may be either asc or desc.}
+//https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams
+function something() {
+	// const new_params = new URLSearchParams([
+	// 	...Array.from(url.searchParams.entries()), // [["a","hello"],["b","world"]]
+	// 	...Object.entries(add_params), // [["c","a"],["d","2"],["e","false"]]
+	// ]).toString();
+	// console.log(new_params);
+	// a=hello&b=world&c=a&d=2&e=false
 
+
+	// `index.html?cards=`
+	// `index.html?suits=`
+	// `index.html?ranks=`
+	// `index.html?suits=spades&limit=4` <= limit this needs to check all
+}
