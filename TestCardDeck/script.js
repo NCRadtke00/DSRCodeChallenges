@@ -221,7 +221,10 @@ if (cards) {
 }
 // `index.html?suits=`
 const suits = params.get('suits');
-if (suits) { }
+if (suits) {
+	const suitsArray = suits.split(' ');
+	deck.filter("suit", suitsArray);
+}
 // `index.html?ranks=`
 const ranks = params.get('ranks');
 if (ranks) { }
