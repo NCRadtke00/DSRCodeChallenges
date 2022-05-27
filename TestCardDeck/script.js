@@ -221,3 +221,14 @@ console.log(deck);
 // ]).toString();
 // console.log(new_params);
 // a=hello&b=world&c=a&d=2&e=false
+//checking readme inputs
+// index.html?cards=s-3 - works!
+// index.html?cards=s-3+c-9+h-A - works!
+// index.html?ranks=3 -works!
+// index.html?ranks=3+5+13 - works!
+// index.html?suits=spades - works!
+// index.html?suits=spades+hearts - works!
+// index.html?suits=spades+clubs+hearts - works!
+// index.html?suits=spades&limit=4 - works!
+// index.html?suits=spades+clubs&limit=4 - works!
+// index.html?suits=clubs+hearts&ranks=2+6+10&limit=4 - works!
