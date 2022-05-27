@@ -6,6 +6,7 @@
 - If you have any questions, feel free to reach me at `Raddnc@gmail.com` or via phone at `262-420-6008`.
 
 ## Piet Mondrian - No. VI Composition No. II - done
+![Mondrian](https://user-images.githubusercontent.com/65512131/170791312-bed17214-61e0-425a-806e-09ffa45b6d39.png)
 
 - This is a test designed to challenge your CSS layout skills. Piet Mondrian was a 20th-century Dutch painter who popularized a movement in art, design, and architecture know as [De Stijl](https://en.wikipedia.org/wiki/De_Stijl). His painting _[No. VI / Composition No. II](https://www.artsy.net/artwork/piet-mondrian-no-vi-slash-composition-no-ii)_ is typical of this movement, featuring a grid of rectangular shapes in shades of white, gray and black, accented by bold primary colors.
 
@@ -24,6 +25,8 @@
 - Hit it with the pretty stick; personalize the composition with some tasteful visual flair.
 
 ## Zip Code Finder - done
+![enteringZip](https://user-images.githubusercontent.com/65512131/170791331-7a4c0cb1-ffc8-48f2-8680-044be0393d7e.png)
+![submittedZip](https://user-images.githubusercontent.com/65512131/170791334-d7fb4c6d-44cc-4c67-b925-1e103b810414.png)
 
 - This is a challenge designed to test your ability to fetch data from an API, and manipulate the DOM with javascript. [ZIP Codes](https://en.wikipedia.org/wiki/ZIP_Code) are used by the USPS as unique identifiers for geographic regions. [Zippopotomus](https://zippopotam.us) is a free API that accepts zip codes, and returns detailed information about the geographic region that zip code represents.
 
@@ -42,6 +45,8 @@
 - The code should work in the latest version of Chrome.
 
 ## Card Deck - done
+![cards](https://user-images.githubusercontent.com/65512131/170791291-b8e1eaaf-f45d-433e-8844-71fc930f1973.png)
+![suitsRanksLimit](https://user-images.githubusercontent.com/65512131/170791299-f93e7a23-83f6-4003-b6ba-eb8c78ea6e3d.png)
 
 Because we are not always working from a blank slate, it's important for developers to be able to read preexisting code and figure out how to use it. This challenge designed to test your ability to manipulate the DOM using a preexisting class, based on parameters passed in through the url. When you load index.html, you'll see a deck of cards face down. Your challenge is to draw cards from that deck determined by parmeters passed in via the URL querystring.
 
