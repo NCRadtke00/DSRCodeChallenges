@@ -179,3 +179,18 @@ const deck = new CardDeck(".deck", ".hand");
 
 // Take a look at the deck object and its methods.
 console.log(deck);
+// {When you load index.html, you'll see a deck of cards face down. Your challenge is to draw cards from that deck determined by parmeters passed in via the URL querystring.
+
+// 1. Accept parameters through the URL querystring.
+// 2. Draw the cards that match those parameters.
+// 3. Take a look at the existing class CardDeck, and determine how to use it to complete the test.
+
+// Use the following URL parameters to determine which cards should be drawn. You should be able to filter by more than one parameter at a time, and non-specified parameters eg: (?foo=bar) should not draw any cards.
+
+// `index.html?cards=`
+// `index.html?suits=`
+// `index.html?ranks=`
+// `index.html?suits=spades&limit=4`
+
+// sorted' should sort the drawn cards: grouped by suit and ordered by rank. Ordering may be either asc or desc.}
+
