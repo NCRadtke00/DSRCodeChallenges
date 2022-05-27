@@ -187,24 +187,33 @@ console.log(deck);
 
 // Use the following URL parameters to determine which cards should be drawn. You should be able to filter by more than one parameter at a time, and non-specified parameters eg: (?foo=bar) should not draw any cards.
 
-// `index.html?cards=`
-// `index.html?suits=`
-// `index.html?ranks=`
-// `index.html?suits=spades&limit=4`
 
 // sorted' should sort the drawn cards: grouped by suit and ordered by rank. Ordering may be either asc or desc.}
+function sortPossibleCards() {
+	//not needed
+	//could check if asc if not reverse or ignore
+	//let lowestToHighest = cards. sort((a, b) => a - b);
+	//let highestToLowest = cards. sort((a, b) => b-a);
+
+} // do without jquery
 //https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams
-function something() {
-	// const new_params = new URLSearchParams([
-	// 	...Array.from(url.searchParams.entries()), // [["a","hello"],["b","world"]]
-	// 	...Object.entries(add_params), // [["c","a"],["d","2"],["e","false"]]
-	// ]).toString();
-	// console.log(new_params);
-	// a=hello&b=world&c=a&d=2&e=false
+
+// const new_params = new URLSearchParams([
+// 	...Array.from(url.searchParams.entries()), // [["a","hello"],["b","world"]]
+// 	...Object.entries(add_params), // [["c","a"],["d","2"],["e","false"]]
+// ]).toString();
+// console.log(new_params);
+// a=hello&b=world&c=a&d=2&e=false
+const params = new URLSearchParams(window.location.search);
+
+//check cards limit as cards suits and rank could all have limit im starting here
+
+// `index.html?suits=spades&limit=4`
+// `index.html?cards=`
+if (cards) { }
+// `index.html?suits=`
+if (suits) { }
+// `index.html?ranks=`
+if (ranks) { }
 
 
-	// `index.html?cards=`
-	// `index.html?suits=`
-	// `index.html?ranks=`
-	// `index.html?suits=spades&limit=4` <= limit this needs to check all
-}
