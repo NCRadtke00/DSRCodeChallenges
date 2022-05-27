@@ -179,57 +179,41 @@ const deck = new CardDeck(".deck", ".hand");
 
 // Take a look at the deck object and its methods.
 console.log(deck);
-// {When you load index.html, you'll see a deck of cards face down. Your challenge is to draw cards from that deck determined by parmeters passed in via the URL querystring.
 
-// 1. Accept parameters through the URL querystring.
-// 2. Draw the cards that match those parameters.
-// 3. Take a look at the existing class CardDeck, and determine how to use it to complete the test.
-
-// Use the following URL parameters to determine which cards should be drawn. You should be able to filter by more than one parameter at a time, and non-specified parameters eg: (?foo=bar) should not draw any cards.
-
-
-// sorted' should sort the drawn cards: grouped by suit and ordered by rank. Ordering may be either asc or desc.}
 function sortPossibleCards() {
+	// sorted' should sort the drawn cards: grouped by suit and ordered by rank. Ordering may be either asc or desc.}
 	//not needed
 	//could check if asc if not reverse or ignore
 	//let lowestToHighest = cards. sort((a, b) => a - b);
 	//let highestToLowest = cards. sort((a, b) => b-a);
+}
+const params = new URLSearchParams(window.location.search);
+const limit = params.get('limit'); // `index.html?suits=spades&limit=4`
+if (limit) {
+	deck.limit(parseInt(limit));
+}
+const cards = params.get('cards'); // `index.html?cards=`
+if (cards) {
+	const cardsArray = cards.split(' ');
+	deck.filter("id", cardsArray);
+}
+const suits = params.get('suits'); // `index.html?suits=`
+if (suits) {
+	const suitsArray = suits.split(' ');
+	deck.filter("suit", suitsArray);
+}
+const ranks = params.get('ranks'); // `index.html?ranks=`
+if (ranks) { //will also need to map the cards rank
+	const ranksArray = ranks.split(' ').map((cardRank) => parseInt(cardRank));
+	deck.filter("rank", ranksArray);
+}
+deck.sort();
+deck.drawFiltered();
 
-} // do without jquery
 //https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams/URLSearchParams
-
 // const new_params = new URLSearchParams([
 // 	...Array.from(url.searchParams.entries()), // [["a","hello"],["b","world"]]
 // 	...Object.entries(add_params), // [["c","a"],["d","2"],["e","false"]]
 // ]).toString();
 // console.log(new_params);
 // a=hello&b=world&c=a&d=2&e=false
-const params = new URLSearchParams(window.location.search);
-
-//check cards limit as cards suits and rank could all have limit im starting here
-// `index.html?suits=spades&limit=4`
-const limit = params.get('limit');
-if (limit) {
-	deck.limit(parseInt(limit));
-}
-
-// `index.html?cards=`
-const cards = params.get('cards');
-if (cards) {
-	const cardsArray = cards.split(' ');
-	deck.filter("id", cardsArray);
-}
-// `index.html?suits=`
-const suits = params.get('suits');
-if (suits) {
-	const suitsArray = suits.split(' ');
-	deck.filter("suit", suitsArray);
-}
-// `index.html?ranks=`
-const ranks = params.get('ranks');
-if (ranks) {
-	const ranksArray = ranks.split(' ');
-	deck.filter("rank", ranksArray);
-}
-deck.sort();
-deck.drawFiltered();
