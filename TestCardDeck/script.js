@@ -228,4 +228,5 @@ if (suits) {
 // `index.html?ranks=`
 const ranks = params.get('ranks');
 if (ranks) { }
-
+deck.sort();
+deck.drawFiltered();
